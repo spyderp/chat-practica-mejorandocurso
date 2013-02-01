@@ -1,0 +1,126 @@
+body{
+	background-color: #111;
+	color: #ccc;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	margin: 0;
+}
+article{
+	padding: 1em;
+}
+header{
+	background-color: #0089ad;
+	color: #fffddd; 
+	padding: 1em; 
+}
+section{
+	display: inline-block;
+	padding: 0;
+	margin-top:1em;
+	transition: all 1s ease;
+	vertical-align: top;
+}
+section h2{
+	margin: 0;
+	padding: 0;
+}
+#botonOpciones{
+	background-color: #ccc;
+	border-radius: 0.2em;
+	border: 1px solid #666;
+	color: #666;
+	display: none;
+	float: right;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0 0.2em;
+	text-decoration: none;
+}
+#boxMsg{
+	background-color: #ccc;
+	border: 1px solid #aaa;
+	padding: 0.2em 0.2em 0.2em 1em;
+	animation:bounceInDown 1s both;
+}
+#chat{ 
+	width: 78%; 
+	z-index: 999;
+}
+#lista{
+	background-color: #ddffaa;
+	border: 2px solid #aaa;
+	color: #000;
+	font-size: 1em;
+	height: 400px;
+	margin-top:1em;
+	overflow: auto;
+	width: 98%;
+}
+#option{
+	width: 20%;
+	background-color: #666;
+	border-radius: 2em;
+	transition: all 1s ease;
+}
+#option input{
+	display: block;
+	width: 90%;
+}
+@media all and (max-width:450px) { 
+	h1{
+		font-size: 1.2em;
+		display: inline-block;
+	}
+	h1 span{
+		display: block; 
+		font-size: 0.7em;
+	}
+	header{
+		padding: 0.2em 0.5em;
+	}
+	#botonOpciones{
+		display: inline-block;
+	}
+	#chat{
+		padding-top: 0;
+		width: 98%;
+	}
+	#chat article{
+		padding: 0 0.5em;
+	}
+	#option{
+		border-radius:0;
+		opacity:0;
+		float: left;
+		height: 0;
+		left: 0;
+		margin: 45px 0 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 0;
+	}
+}
+@keyframes bounceInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	
+	60% {
+		opacity: 1;
+		transform: translateY(30px);
+	}
+	
+	80% {
+		transform: translateY(-10px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}

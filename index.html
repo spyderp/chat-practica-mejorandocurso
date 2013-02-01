@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Ejemplo de chat estilo mejorandola</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="prefixfree.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="socket.io.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Bienvenidos al chat <span>de mejorandola que es Responsive Desing</span></h1>
+		<a href="" id="botonOpciones">☰</a>
+	</header>
+	<section id="chat">
+		<article>
+			<h2>Chat</h2>
+			<input type="text" id="mensaje" handholder="coloque su mensaje aquí">
+			<button id="enviar">Enviar</button>
+			<div id="lista">
+				
+			</div>
+		</article>	
+	</section>
+	<section id="option">
+		<article>
+			<h2>Opciones del Chat</h2>
+			<label>Nombre de Usuario</label>
+			<input type="text" id="nombre" value="anonimo">
+			<label>Color de mensaje</label>
+			<input type="color" id="color" value="#000000">
+			<label>Tamaño de letra</label>
+			<select name="tamano" id="size">
+				<option value="1em" selected="selected">12</option>
+				<option value="1.25em">14</option>
+				<option value="1.35em">16</option>
+			</select>
+		</article>
+	</section>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
