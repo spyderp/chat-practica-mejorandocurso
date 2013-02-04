@@ -79,3 +79,10 @@ $('#enviar').on('click', enviarMensaje);
 $('#color').on('change', guardarColor);
 $('#size').on('change', guardarTamano);
 $('#nombre').on('change', guardarUsuario);
+//Arregla el bug de responsive desing
+$(window).resize(function(){
+	var bodyWidth = $(this).width();
+	if(bodyWidth>450 && $('#option').attr('style')!=''){
+		$('#option').removeAttr("style");
+	}
+});
