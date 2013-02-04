@@ -1,13 +1,16 @@
-body{
-	background-color: #111;
-	color: #ccc;
-	font-family: Arial;
-	font-size: 16px;
+*{
 	margin: 0;
-	padding: 0;
+}
+body{
+	background-color: white;
+	color: white;
+	font-family: "Open Sans" Arial, sans-serif;
+	font-size: 16px;
 }
 h1{
+	font-weight: normal;
 	margin: 0;
+	text-align: center;
 }
 article{
 	padding: 1em;
@@ -17,16 +20,27 @@ header{
 	color: #fffddd; 
 	padding: 1em; 
 }
+input{
+	padding: 0.5em;
+	transition: all 0.1s ease;
+}
+input[type="text"]{
+	width: 80%;
+}
+input[type="submit"]{
+	background: #0089ad;
+	border: 3px solid #dedede;
+	color: white;
+	width: 17%;
+}
+input[type="submit"]:hover{
+	background: #009ec8;
+}
 section{
 	display: inline-block;
 	padding: 0;
-	margin-top:1em;
 	transition: all 1s ease;
 	vertical-align: top;
-}
-section h2{
-	margin: 0;
-	padding: 0;
 }
 #botonOpciones{
 	background-color: #ccc;
@@ -41,34 +55,43 @@ section h2{
 	text-decoration: none;
 }
 #boxMsg{
+	animation:bounceInDown 1s both;
 	background-color: #ccc;
 	border: 1px solid #aaa;
 	padding: 0.2em 0.2em 0.2em 1em;
-	animation:bounceInDown 1s both;
 }
 #chat{ 
-	width: 78%; 
-	z-index: 999;
+	width: 78%;
 }
 #lista{
-	background-color: #ddffaa;
+	background-color: #bed9e0;
+	border-radius: 2px;
 	border: 2px solid #aaa;
 	color: #000;
 	font-size: 1em;
 	height: 400px;
 	margin-top:1em;
 	overflow: auto;
-	width: 98%;
 }
 #option{
-	width: 20%;
-	background-color: #666;
-	border-radius: 2em;
+	background-color: rgb(221, 221, 221);
+	border-radius: 6px;
+	color: #555;
+	margin-top: 15px;
 	transition: all 1s ease;
+	width: 20%;
 }
 #option input{
 	display: block;
 	width: 90%;
+}
+@media all and (max-width: 1084px) {
+	input[type="text"]{
+		width: 60%;
+	}
+	input[type="submit"]{
+		width: 30%;
+	}
 }
 @media all and (max-width:450px) { 
 	h1{
