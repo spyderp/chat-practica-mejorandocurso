@@ -76,6 +76,8 @@ var menuDesplegable=function(){
 $(document).on('ready', main);
 $('#botonOpciones').on('click', menuDesplegable);
 $('#enviar').on('click', enviarMensaje);
+//Enviar mensaje al presionar enter.
+$('#mensaje').on('change', enviarMensaje);
 $('#color').on('change', guardarColor);
 $('#size').on('change', guardarTamano);
 $('#nombre').on('change', guardarUsuario);
